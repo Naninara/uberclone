@@ -1,6 +1,6 @@
-import { View, Text, StatusBar } from "react-native";
+import { View } from "react-native";
 import React from "react";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+
 import tw from "tailwind-react-native-classnames";
 import Map from "../Components/Map";
 import RideOptions from "../Components/RideOptions";
@@ -14,7 +14,7 @@ const MapScreen = () => {
         <Map />
       </View>
 
-      <View style={tw`h-1/2`}>
+      <View style={[tw`h-1/2 `, { flexGrow: 1 }]}>
         <Stack.Navigator>
           <Stack.Screen
             name="destinationCard"

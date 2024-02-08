@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Image } from "react-native";
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import NavOptions from "../Components/NavOptions";
@@ -53,7 +53,7 @@ const HomeScreen = () => {
         />
         <NavOptions />
       </View>
-      <NavRides />
+      <NavRides typeOfDestination="origin" />
     </View>
   );
 };
